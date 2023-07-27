@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Job Finder</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">A melhor trufa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sabor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="add.html">Ver o Sabor</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="add-form-container" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Divulgue trufas formulário</h1>
+      </div>
+      <div id="form-box" class="col-md-12">
+        <h2>Preencha os dados da melhor forma possível!</h2>
+        <form action="">
+          <div class="form-group">
+            <label for="sabor"> Sabor da trufa:</label>
+            <input type="text" class="form-control" id="sabor" name="sabor" placeholder="Digite o sabor da trufa" required>
+            <small id="titleHelp" class="form-text text-muted">O sabor é muito importante, seja claro e objetivo.</small>
+          </div>
+          <div class="form-group">
+            <label for="quantidade">Quantidade de trufas:</label>
+            <input type="txt" class="form-control" id="quantidade" name="quantidade" placeholder="Descreva as quandidade de trufas" required>
+          </div>
+          <div class="form-group">
+            <label for="validadeF">Validade da trufa foi fabicada:</label>
+            <input type="text" class="form-control" id="validadeF" name="validadeF" placeholder="Digite avalidade da trufa" required>
+          </div>
+          <div class="form-group">
+            <label for="validadeV">Validade do  :</label>
+            <input type="text" class="form-control" id="validadeV" name="validadeV" placeholder="Digite validade da trufa" required>
+          </div>
+          <div class="form-group">
+            <label for="valorT">Valor da trufa:</label>
+            <input type="text" class="form-control" id="valorT" name="valorT" placeholder="Digite o valor da trufa" required>
+          </div>
+          <input type="hidden" name="new_job" value="1">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

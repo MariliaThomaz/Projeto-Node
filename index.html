@@ -1,25 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A menhor trufa</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A melhor Ttufa</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light lg-light">
-        <a class=" navbar-brand" href="index.html">Trufas</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Trufa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav"></div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sabores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="add.html">Sabor novos</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <div id="top-container" class="container-fluid">
+    <h1 id="main-title" class="text-center">Um dia mais leve é com uma trufa</h1>
+    <p id="main-subtitle" class="text-center">Você encontrará trufas com qualidade e com muito sabor</p>
+    <form id="search-form" class="form-inline" action="">
+      <div class="form-group col-md-10">
+        <input type="text" class="form-control" id="job" name="job" placeholder="Digite o sabor desejado">
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-primary">Procurar</button>
+      </div>
+    </form>
+  </div>
+  <main>
+    <div id="jobs-container" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="job-list-title">Veja sabores disponível</h2>
+          <ul id="job-list" class="list-group">
+            <li class="list-group-item new-job">
+              <img src="public/img/company.png" alt="Company">
+              <p>Trufa</p>
+              <h2>Morango</h2>
+              <p>R$4,50</p>
+              <span class="new-job-label">Novos Sabores </span>
+              <a class="btn btn-primary">Ver sabores</a>
+            </li>
+            <li class="list-group-item new-job">
+              <img src="public/img/company.png" alt="Company">
+              <p>Trufa</p>
+              <h2>Brigadeiro</h2>
+              <p>R$4,50</p>
+              <span class="new-job-label">Novos Sabores</span>
+              <a class="btn btn-primary">Ver sabores</a>
+            </li>
+            <li class="list-group-item">
+              <img src="public/img/company.png" alt="Company">
+              <p>Trufa</p>
+              <h2>Maracujá</h2>
+              <p>R$4,50</p>
+              <a class="btn btn-primary">Ver sabores</a>
+            </li>            
+            <li class="list-group-item">
+              <img src="public/img/company.png" alt="Company">
+              <p>Trufa</p>
+              <h2>Ninhoo</h2>
+              <p>R$4,50</p>
+              <a class="btn btn-primary">Ver sabores</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
